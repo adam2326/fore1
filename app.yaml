@@ -1,0 +1,14 @@
+application: machine-learning-backend
+version: forecasting
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+-url: /forecasting
+ script: main.app
+ secure: always
+
+libraries:
+- name: jinja
+  version: latest
